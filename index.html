@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Shinde | Full Stack Developer</title>
+    <link rel="icon" type="image/png" href="./img/CODEVENOM Fullstack Development Wallpaper copy.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        // Immediately check for saved theme and apply it to prevent flashing
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light') {
+            document.documentElement.classList.add('light-theme');
+        }
+    </script>
+</head>
+<body>
+
+    <div class="cursor"></div>
+
+    <div id="preloader">
+        <div class="preloader-text">Developer Leader DSA</div>
+        <div class="preloader-panel panel-left"></div>
+        <div class="preloader-panel panel-right"></div>
+    </div>
+    
+    <header>
+        <div class="logo"></div>
+        <div class="header-controls">
+            <button id="theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="menu-toggle">
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="hero" class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="main-heading">
+                        <span>Harsh</span>
+                        <span>Shinde</span>
+                    </h1>
+                    <p class="lead-text">
+                        I design and build beautiful, interactive, and responsive digital experiences from concept to launch.
+                    </p>
+                    <a href="#about" class="cta-button magnetic-button">
+                        <span>Explore My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="hero-image-container">
+                   <img src="./img/myphoto.jpeg" alt="A portrait of [Your Name]" class="hero-image">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="container">
+            <h2 class="section-title" data-splitting>About Me</h2>
+            <div class="about-grid">
+                <div class="about-text glass-card">
+                    <h3>Hello, I'm Harsh Shinde</h3>
+                    <p>Founder V. President - CSSA RCPCOEP| Java | Full Stack | CIIA-3 Competitor</p>
+                    <br>
+                     <p>Event Manager - Department Advisory Board @RCPCOEP | JSCOE’ 28</p>
+                </div>
+                <div class="education-timeline glass-card">
+                    <h3>My Education</h3>
+                    <div class="timeline-item">
+                        <h4>B.E</h4>
+                        <p>JSCOE | 2025 - 2028</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Post Graduate Diploma</h4>
+                        <p>RCPCOEP | 2022 - 2025</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="skills">
+            <div class="skills-marquee">
+                <div class="skills-track">
+                    <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React</span><span>GSAP</span><span>Node.js</span><span>Figma</span><span>Git</span><span>Java</span><span>Bootstrap</span>
+                    <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React</span><span>GSAP</span><span>Node.js</span><span>Figma</span><span>Git</span><span>Java</span><span>Bootstrap</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="container">
+            <h2 class="section-title" data-splitting>Experience</h2>
+            <div class="experience-grid">
+                <div class="experience-card glass-card" data-tilt>
+                    <div class="card-content">
+                        <h3>Intern</h3>
+                        <p class="company">CodeAlpha | Full Stack Developer | Oct-2025</p>
+                        <ul>
+                            <li>Developed and maintained key features for Social Media App</li>
+                            <li>Collaborated with a team of developers to improve code quality.</li>
+                            <li>Currently Working</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experience-card glass-card" data-tilt>
+                    <div class="card-content">
+                        <h3>Intern</h3>
+                        <p class="company">I-Tech System | Full Stack Developer | July-2024</p>
+                        <ul>
+                            <li>Honnored As the best Intern Of The Batch.</li>
+                            <li>worked on Tech stack: HTML, Tailwind CSS, JavaScript, GitHub (Pages & repo)</li>
+                            <li>Componentized front-end structure, performance-conscious DOM updates, accessibility considerations, and clean Git-based CI workflow</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="container">
+            <h2 class="section-title" data-splitting>Projects & Achievements</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-tilt>
+                    <img src="./img/ciia.png" alt="Project 1 Screenshot">
+                    <div class="project-info">
+                        <h3>Alcohol Detection System</h3>
+                        <p> Key Features of the Prototype:
+ • Built using an MQ-3 Alcohol Sensor, Arduino Uno, and custom circuitry.
+ • Integrated with a relay module and DC motor to simulate vehicle control.
+ • Designed to detect alcohol levels and automatically restrict vehicle movement in unsafe conditions.</p>
+                        <div class="project-links">
+                            <a href="./img/alcholol model.png" target="_blank">Model</a>
+                            <a href="#" target="_blank">Youtube</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-tilt>
+                    <img src="./img/Screenshot 2025-09-29 at 10.05.40 PM.png" alt="Project 2 Screenshot">
+                    <div class="project-info">
+                        <h3>FastCare</h3>
+                        <p>Smart Selection: Utilizes traffic,
+specialists and readiness to assign best
+hospital (not just closest).
+Real-Time Coordination: Tracks GPS
+and vitals during transport
+to prepare doctors for arrival.
+Emergency Platform: Mobile app for
+patients + hospital dashboard for real-
+time updates.
+Alert & Escalation: If the hospital is
+non-responsive, request auto-shifts to
+the next best hospital.
+</p>
+                         <div class="project-links">
+                            <a href="https://drive.google.com/file/d/1HYxnRjPLFxNscJ6XKBzLbdjX2twQogJ2/view?usp=drivesdk" target="_blank">View Live Explanation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+
+            <h2 class="section-title" data-splitting>Get In Touch</h2>
+            <p class="contact-lead">Have a project in mind or just want to say hello? My inbox is always open.</p>
+            <a href="mailto:youremail@example.com" class="cta-button magnetic-button">
+                <span>shindeharsh,dev@gmail.com</span>
+            </a>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/harsh-shinde-60046436b/" class="social-icon magnetic-button" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-icon magnetic-button" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-icon magnetic-button" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
